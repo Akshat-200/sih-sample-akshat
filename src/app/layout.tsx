@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { SiteHeader } from "@/components/header";
 import { SiteFooter } from "@/components/footer";
+import { DoubtSolver } from "@/components/doubt-solver";
 
 /**
  * Self-hosted fonts (via @fontsource) instead of next/font/google: the portal
@@ -114,6 +115,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </main>
         <SiteFooter />
+        <DoubtSolver />
       </body>
     </html>
   );

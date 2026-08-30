@@ -1,4 +1,4 @@
-﻿# Pragyan (प्रज्ञान) — Open Digital Learning & Assessment Portal
+# Pragyan (प्रज्ञान) — Open Digital Learning & Assessment Portal
 
 > **Smart India Hackathon (SIH 2026)**  
 > **Team Name:** PRAGYAN  
@@ -23,6 +23,14 @@ Built strictly according to the **National Portal of India Design Guidelines (NI
 ---
 
 ## 🌟 2. Key Features & SIH Innovations
+
+### 🤖 AI Doubt Solver — "Pragyan Sahayak" (Floating Chatbot)
+- **Hovering launcher (bottom-right, every page):** a circular assistant button that opens an instant chat panel — no page switch, no app install.
+- **Context-aware pre-built questions:** students pick **Class (7/8) → Subject → Chapter** inside the widget and get ready NCERT doubts for exactly that chapter; the context auto-follows whatever chapter page is open.
+- **Custom doubts:** any typed question is answered with a strict **40–50 word explanation** (word count shown on every reply) — short enough for weak-network revision, long enough to actually teach.
+- **Runs offline:** powered by an on-device NCERT answer engine (curated bank of 170+ doubts + keyword matcher + chapter-aware study guidance). Works on 2G/offline school machines; **no API key required**.
+- **Optional real LLM:** set `DOUBT_AI_PROVIDER` + `DOUBT_AI_API_KEY` (OpenAI-compatible or Gemini) in `.env` and Sahayak upgrades to a live AI tutor with automatic offline fallback.
+- Bilingual (English + हिन्दी answers), keyboard accessible (Esc to close), honours Data-Saver mode.
 
 ### 📶 Low-Bandwidth Adaptive Mode (Data Saver)
 - **Problem:** Students in rural and government schools frequently face unstable 2G/3G connectivity.
