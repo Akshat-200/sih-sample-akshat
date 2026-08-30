@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
+
 @theme {
   --font-sans: var(--font-mukta), "Mukta", "Segoe UI", "Noto Sans", sans-serif;
   --font-display: var(--font-deva), "Noto Serif Devanagari", "Mukta", serif;
