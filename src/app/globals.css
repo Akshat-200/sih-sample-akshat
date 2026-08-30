@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Mukta", "Segoe UI", "Noto Sans", sans-serif;
-  --font-display: "Noto Serif Devanagari", "Mukta", serif;
+  --font-sans: var(--font-mukta), "Mukta", "Segoe UI", "Noto Sans", sans-serif;
+  --font-display: var(--font-deva), "Noto Serif Devanagari", "Mukta", serif;
 
   --color-navy-50: #eef4f9;
   --color-navy-100: #dce8f2;

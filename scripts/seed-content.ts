@@ -309,7 +309,7 @@ export const videosByChapter: Record<string, VideoSeed[]> = {
   "8-science-6": [
     {
       title: "Combustion: Definition, Conditions & Types",
-      url: `${V}/BigBuckBunny.mp4`,
+      url: "/videos/combustion-definition.mp4",
       duration: 603,
       sizeMb: 96.4,
       markers: [
@@ -325,7 +325,7 @@ export const videosByChapter: Record<string, VideoSeed[]> = {
     },
     {
       title: "Flame Zones: The Copper Wire Loop Experiment",
-      url: `${V}/ElephantsDream.mp4`,
+      url: "/videos/flame-zones-experiment.mp4",
       duration: 653,
       sizeMb: 169.8,
       markers: [
