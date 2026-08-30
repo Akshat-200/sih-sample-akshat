@@ -343,16 +343,14 @@ export const videosByChapter: Record<string, VideoSeed[]> = {
   "8-mathematics-1": [
     {
       title: "Rational Numbers: Number Line & Standard Form",
-      url: `${V}/Sintel.mp4`,
-      duration: 888,
-      sizeMb: 129.8,
+      url: "/videos/rational-numbers.mp4",
+      duration: 10,
+      sizeMb: 2.1,
       markers: [
-        { t: 0, label: "What makes a number rational?" },
-        { t: 80, label: "p/q form and the q ≠ 0 rule" },
-        { t: 200, label: "Placing rationals on a number line" },
-        { t: 350, label: "Standard form worked examples" },
-        { t: 520, label: "Additive & multiplicative inverses" },
-        { t: 700, label: "Practice set" },
+        { t: 0, label: "Introduction: What is a Rational Number?" },
+        { t: 3, label: "p/q Form & q ≠ 0 Rule" },
+        { t: 6, label: "Number Line Representation" },
+        { t: 8, label: "Standard Form Worked Examples" },
       ],
       slides: "/slides/rational-numbers.md",
       slidesTitle: "Slides — Rational Numbers",
