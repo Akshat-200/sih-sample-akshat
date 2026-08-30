@@ -172,34 +172,46 @@ function tokenize(s: string): string[] {
   return s
     .toLowerCase()
     .split(TOKEN_RE)
-    .filter((t) => t.length >= 3 && !STOPWORDS.has(t))
+    .filter((t) => t.length >= 2 && !STOPWORDS.has(t))
     .map(stem);
 }
 
-type Candidate = { q: string; a: string; keywords: Set<string>; qTokens: Set<string> };
+type Candidate = {
+  q: string;
+  a: string;
+  ch?: number;
+  keywords: Set<string>;
+  qTokens: Set<string>;
+};
 
 function toCandidate(entry: Faq | GeneralFaq): Candidate {
   return {
     q: entry.q,
     a: entry.a,
+    ch: "ch" in entry ? entry.ch : undefined,
     keywords: new Set((entry.k ?? []).flatMap(tokenize)),
     qTokens: new Set(tokenize(entry.q)),
   };
 }
 
-function scoreCandidate(tokens: string[], c: Candidate): { score: number; longest: number } {
+function scoreCandidate(
+  tokens: string[],
+  c: Candidate,
+): { score: number; longest: number; keywordHit: boolean } {
   let score = 0;
   let longest = 0;
+  let keywordHit = false;
   for (const t of new Set(tokens)) {
     if (c.keywords.has(t)) {
       score += 3;
+      keywordHit = true;
       longest = Math.max(longest, t.length);
     } else if (c.qTokens.has(t)) {
       score += 2;
       longest = Math.max(longest, t.length);
     }
   }
-  return { score, longest };
+  return { score, longest, keywordHit };
 }
 
 function bestCuratedMatch(question: string, ctx: DoubtContext): Candidate | null {
@@ -216,12 +228,15 @@ function bestCuratedMatch(question: string, ctx: DoubtContext): Candidate | null
   let best: Candidate | null = null;
   let bestScore = 0;
   for (const c of pool) {
-    const { score, longest } = scoreCandidate(tokens, c);
-    // Multi-word matches pass at 4+; a single strong token (like
-    // "photosynthesis" or "friction") passes on its own when distinctive.
-    const passes = score >= 4 || (score >= 2 && longest >= 5);
-    if (passes && score > bestScore) {
-      bestScore = score;
+    const { score, longest, keywordHit } = scoreCandidate(tokens, c);
+    // A curated keyword hit, multi-word overlap, or one strong distinctive
+    // token (like "photosynthesis") is enough to consider the match.
+    const passes = keywordHit || score >= 4 || (score >= 2 && longest >= 5);
+    if (!passes) continue;
+    // Small boost for doubts of the chapter the student has selected.
+    const boost = c.ch != null && c.ch === ctx.chapterNum ? 1 : 0;
+    if (score + boost > bestScore) {
+      bestScore = score + boost;
       best = c;
     }
   }
