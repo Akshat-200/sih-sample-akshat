@@ -24,13 +24,11 @@ Built strictly according to the **National Portal of India Design Guidelines (NI
 
 ## 🌟 2. Key Features & SIH Innovations
 
-### 🤖 AI Doubt Solver — "Pragyan Sahayak" (Floating Chatbot)
+### 🤖 AI Chat Assistant — "Pragyan Sahayak" (Floating Chatbot)
 - **Hovering launcher (bottom-right, every page):** a circular assistant button that opens an instant chat panel — no page switch, no app install.
-- **Context-aware pre-built questions:** students pick **Class (7/8) → Subject → Chapter** inside the widget and get ready NCERT doubts for exactly that chapter; the context auto-follows whatever chapter page is open.
-- **Custom doubts:** any typed question is answered with a strict **40–50 word explanation** (word count shown on every reply) — short enough for weak-network revision, long enough to actually teach.
-- **Runs offline:** powered by an on-device NCERT answer engine (curated bank of 170+ doubts + keyword matcher + chapter-aware study guidance). Works on 2G/offline school machines; **no API key required**.
-- **Optional real LLM:** set `DOUBT_AI_PROVIDER` + `DOUBT_AI_API_KEY` (OpenAI-compatible or Gemini) in `.env` and Sahayak upgrades to a live AI tutor with automatic offline fallback.
-- Bilingual (English + हिन्दी answers), keyboard accessible (Esc to close), honours Data-Saver mode.
+- **Ask anything:** students type any question — NCERT doubts, homework, general knowledge, or just a chat — and **Google Gemini** answers naturally in the same language (English, हिन्दी, or any other).
+- **Simple & unrestricted:** no class/subject selectors, no pre-made question chips, no word-count limits. Just a clean chat with the model.
+- **Powered by Gemini:** set `DOUBT_AI_API_KEY` (plus `DOUBT_AI_PROVIDER=gemini`) in `.env` to enable. Model defaults to `gemini-2.5-flash`.
 
 ### 📶 Low-Bandwidth Adaptive Mode (Data Saver)
 - **Problem:** Students in rural and government schools frequently face unstable 2G/3G connectivity.
@@ -117,12 +115,25 @@ This creates the SQLite database tables and seeds demo students, faculty, NCERT 
 npm run db:setup
 ```
 
-### Step 4: Start the Development Server
+### Step 4: Enable the Gemini AI Chat Assistant
+The floating **Pragyan Sahayak** chatbot answers every question through **Google Gemini**. Copy `.env.example` to `.env` and set:
+
+```bash
+DOUBT_AI_PROVIDER=gemini
+DOUBT_AI_API_KEY=your-gemini-api-key-from-aistudio.google.com
+DOUBT_AI_MODEL=gemini-2.5-flash
+```
+
+Students can then ask about anything — NCERT doubts, homework, general knowledge — and Gemini answers in the language of the question.
+
+The chat tries the secure server-side route first. If the server cannot reach Google (e.g. a hosted preview), it automatically calls Gemini directly from the student's browser via `NEXT_PUBLIC_GEMINI_API_KEY` — set that too if you want the fallback. **Note:** `NEXT_PUBLIC_*` keys are visible in the browser bundle, so leave them unset in production.
+
+### Step 5: Start the Development Server
 ```bash
 npm run dev
 ```
 
-### Step 5: Open in Your Browser
+### Step 6: Open in Your Browser
 Open your browser and visit:
 👉 **[http://localhost:3000](http://localhost:3000)**
 
