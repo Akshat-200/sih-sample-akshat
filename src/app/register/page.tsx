@@ -129,7 +129,7 @@ export default function RegisterPage() {
           <Wordmark />
         </div>
         <h1 className="mt-4 text-2xl font-extrabold text-navy-900 sm:text-3xl">
-          Create Your VidyaSetu Account
+          Create Your Pragyan (प्रज्ञान) Account
         </h1>
         <p className="mt-1.5 text-sm text-slate-600">
           NCERT-Aligned Learning &amp; Assessment Portal for Class 7 &amp; 8

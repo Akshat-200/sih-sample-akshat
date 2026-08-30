@@ -21,7 +21,7 @@ function usersTableReady(): boolean {
 function guestCount(): number {
   try {
     const res = sqlite.exec(
-      `SELECT COUNT(*) AS n FROM users WHERE email = 'guest.student@vidyasetu.gov.in';`,
+      `SELECT COUNT(*) AS n FROM users WHERE email = 'guest.student@pragyan.gov.in';`,
     );
     if (!res.length || !res[0].values.length) return 0;
     return Number(res[0].values[0][0] ?? 0);

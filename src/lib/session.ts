@@ -4,9 +4,9 @@ import { db } from "../db";
 import { users } from "../db/schema";
 import { eq } from "drizzle-orm";
 
-const SECRET = process.env.SESSION_SECRET ?? "vidyasetu-sih-demo-secret";
+const SECRET = process.env.SESSION_SECRET ?? "pragyan-sih-demo-secret";
 const COOKIE = "vs_session";
-const OPEN_GUEST_EMAIL = "guest.student@vidyasetu.gov.in";
+const OPEN_GUEST_EMAIL = "guest.student@pragyan.gov.in";
 
 export type SessionUser = {
   id: number;

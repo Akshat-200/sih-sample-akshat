@@ -32,17 +32,17 @@ export function ChakraMark({ className = "h-10 w-10" }: { className?: string }) 
 
 export const Wordmark = ({ light = false }: { light?: boolean }) => (
   <span className="flex items-center gap-2.5">
-    <ChakraMark className={light ? "h-9 w-9 text-saffron-400" : "h-9 w-9 text-navy-800"} />
+    <ChakraMark className={light ? "h-9 w-9 text-saffron-400" : "h-9 w-9 text-navy-800 dark:text-saffron-400"} />
     <span className="leading-none">
       <span
-        className={`block font-display text-[22px] font-bold ${light ? "text-white" : "text-navy-900"}`}
+        className={`block font-display text-[22px] font-bold ${light ? "text-white" : "text-navy-900 dark:text-white"}`}
       >
-        विद्यासेतु
+        प्रज्ञान
       </span>
       <span
-        className={`block text-[10.5px] font-semibold uppercase tracking-[0.14em] ${light ? "text-navy-200" : "text-navy-500"}`}
+        className={`block text-[10.5px] font-semibold uppercase tracking-[0.14em] ${light ? "text-navy-200" : "text-navy-500 dark:text-slate-400"}`}
       >
-        VidyaSetu · Learning Portal
+        Pragyan · Learning Portal
       </span>
     </span>
   </span>

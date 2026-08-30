@@ -87,9 +87,9 @@ const deva = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "VidyaSetu — Open Digital Learning & Assessment Portal",
+  title: "Pragyan (प्रज्ञान) — Open Digital Learning & Assessment Portal",
   description:
-    "NCERT-aligned learning portal for Class 7 & 8: verified lectures, peer-reviewed notes, PYQ assessments and gamified leaderboards. SIH Edition.",
+    "NCERT-aligned learning portal for Class 7 & 8: verified lectures, peer-reviewed notes, PYQ assessments and gamified leaderboards. Smart India Hackathon (SIH 2026).",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

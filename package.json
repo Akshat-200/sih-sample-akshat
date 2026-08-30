@@ -1,5 +1,5 @@
 {
-  "name": "vidyasetu-nextjs-sqlite",
+  "name": "pragyan-learning-portal",
   "private": true,
   "scripts": {
     "dev": "next dev",

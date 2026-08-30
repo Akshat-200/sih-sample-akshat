@@ -63,8 +63,8 @@ function rnd() {
 const pick = (n: number) => Math.floor(rnd() * n);
 
 const DEMO_USERS = [
-  { handle: "ms_anita", name: "Anita Sharma", email: "anita.sharma@vidyasetu.gov.in", role: "faculty" as const, spec: "Science", inst: "SCH-GJ-204", state: "Gujarat" },
-  { handle: "ravi_verma", name: "Ravi Verma", email: "ravi.verma@vidyasetu.gov.in", role: "faculty" as const, spec: "Mathematics", inst: "SCH-MH-112", state: "Maharashtra" },
+  { handle: "ms_anita", name: "Anita Sharma", email: "anita.sharma@pragyan.gov.in", role: "faculty" as const, spec: "Science", inst: "SCH-GJ-204", state: "Gujarat" },
+  { handle: "ravi_verma", name: "Ravi Verma", email: "ravi.verma@pragyan.gov.in", role: "faculty" as const, spec: "Mathematics", inst: "SCH-MH-112", state: "Maharashtra" },
   { handle: "aarav_p", name: "Aarav Patel", email: "aarav@student.in", role: "student" as const, className: 8, state: "Gujarat", school: "Shiksha Kendra, Rajkot" },
   { handle: "diya_m", name: "Diya Mehta", email: "diya@student.in", role: "student" as const, className: 8, state: "Gujarat", school: "Kendriya Vidyalaya, Ahmedabad" },
   { handle: "rohan_k", name: "Rohan Kulkarni", email: "rohan@student.in", role: "student" as const, className: 8, state: "Maharashtra", school: "Ganesh Vidyalaya, Pune" },
@@ -75,8 +75,8 @@ const DEMO_USERS = [
   { handle: "meera_n", name: "Meera Nair", email: "meera@student.in", role: "student" as const, className: 7, state: "Kerala", school: "Govt. School, Thiruvananthapuram" },
   { handle: "vihaan_g", name: "Vihaan Gupta", email: "vihaan@student.in", role: "student" as const, className: 7, state: "Rajasthan", school: "Govt. Sr. Sec. School, Jaipur" },
   { handle: "ananya_b", name: "Ananya Banerjee", email: "ananya@student.in", role: "student" as const, className: 7, state: "Odisha", school: "GVHS, Bhubaneswar" },
-  { handle: "guest_student", name: "Guest Student", email: "guest.student@vidyasetu.gov.in", role: "student" as const, className: 8, state: "All India", school: "VidyaSetu Guest", guest: true },
-  { handle: "guest_faculty", name: "Guest Faculty", email: "guest.faculty@vidyasetu.gov.in", role: "faculty" as const, spec: "Science", inst: "SCH-DEMO", state: "All India", guest: true },
+  { handle: "guest_student", name: "Guest Student", email: "guest.student@pragyan.gov.in", role: "student" as const, className: 8, state: "All India", school: "Pragyan Guest", guest: true },
+  { handle: "guest_faculty", name: "Guest Faculty", email: "guest.faculty@pragyan.gov.in", role: "faculty" as const, spec: "Science", inst: "SCH-DEMO", state: "All India", guest: true },
 ];
 
 const CHAPTER_CONTENT: Record<

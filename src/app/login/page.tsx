@@ -22,14 +22,14 @@ const DEMO_ACCOUNTS = [
     role: "faculty",
     label: "Ms. Anita Sharma",
     desc: "Science Faculty · SCH-GJ-204 · Gujarat",
-    email: "anita.sharma@vidyasetu.gov.in",
+    email: "anita.sharma@pragyan.gov.in",
     pw: "demo123",
   },
   {
     role: "faculty",
     label: "Ravi Verma",
     desc: "Mathematics Faculty · SCH-MH-112 · Maharashtra",
-    email: "ravi.verma@vidyasetu.gov.in",
+    email: "ravi.verma@pragyan.gov.in",
     pw: "demo123",
   },
   {
@@ -102,7 +102,7 @@ export default function LoginPage() {
           <Wordmark />
         </div>
         <h1 className="mt-4 text-2xl font-extrabold text-navy-900 sm:text-3xl">
-          Sign In to VidyaSetu
+          Sign In to Pragyan (प्रज्ञान)
         </h1>
         <p className="mt-1.5 text-sm text-slate-600">
           Open Digital Learning &amp; Assessment Portal (SIH Edition)
@@ -278,7 +278,7 @@ export default function LoginPage() {
           <div className="rounded-xl border border-line bg-white p-4 text-xs text-slate-600 shadow-sm">
             <p className="font-bold text-navy-900">National Curriculum Alignment</p>
             <p className="mt-1 leading-relaxed">
-              VidyaSetu uses NCERT Learning Outcome mapping (e.g. LO-8-SCI-06) and DIKSHA QR codes.
+              Pragyan uses NCERT Learning Outcome mapping (e.g. LO-8-SCI-06) and DIKSHA QR codes.
               Session data is saved locally via SQLite (WASM).
             </p>
           </div>

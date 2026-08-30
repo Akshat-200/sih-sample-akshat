@@ -1,8 +1,8 @@
-﻿# VidyaSetu (विद्यासेतु) — Open Digital Learning & Assessment Portal
+﻿# Pragyan (प्रज्ञान) — Open Digital Learning & Assessment Portal
 
 > **Smart India Hackathon (SIH 2026)**  
 > **Team Name:** PRAGYAN  
-> **Project Title:** VidyaSetu — Open Digital Learning & Assessment Portal (SIH Edition)
+> **Project Title:** Pragyan — Open Digital Learning & Assessment Portal (SIH Edition)
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.2-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2-blue?style=flat&logo=react)](https://react.dev/)
@@ -16,9 +16,9 @@
 
 ## 📖 1. Overview & Vision
 
-**VidyaSetu** is a lightweight, accessible digital learning and assessment portal aligned with the official **NCERT curriculum** for **Class 7 and Class 8**. Designed specifically for the Indian public school ecosystem, it bridges the gap between students and educators through faculty-verified video lectures, peer-reviewed community notes, previous years' question (PYQ) assessments, and a real-time gamified peer-benchmarking engine.
+**Pragyan** is a lightweight, accessible digital learning and assessment portal aligned with the official **NCERT curriculum** for **Class 7 and Class 8**. Designed specifically for the Indian public school ecosystem, it bridges the gap between students and educators through faculty-verified video lectures, peer-reviewed community notes, previous years' question (PYQ) assessments, and a real-time gamified peer-benchmarking engine.
 
-Built strictly according to the **National Portal of India Design Guidelines (NIC)**, VidyaSetu features a clean Indian Government aesthetic (Deep Blue `#133b5c`, Saffron `#d97706`/`#f59e0b`, High-Contrast Typography, and an Ashoka Chakra emblem).
+Built strictly according to the **National Portal of India Design Guidelines (NIC)**, Pragyan features a clean Indian Government aesthetic (Deep Blue `#133b5c`, Saffron `#d97706`/`#f59e0b`, High-Contrast Typography, and an Ashoka Chakra emblem).
 
 ---
 
@@ -63,8 +63,8 @@ Each NCERT chapter is partitioned into two distinct sub-portals:
 
 | Role | Name | Email | Password | Details |
 | :--- | :--- | :--- | :--- | :--- |
-| **Faculty** | Ms. Anita Sharma | `anita.sharma@vidyasetu.gov.in` | `demo123` | Science Faculty · SCH-GJ-204 (Gujarat) |
-| **Faculty** | Ravi Verma | `ravi.verma@vidyasetu.gov.in` | `demo123` | Mathematics Faculty · SCH-MH-112 (Maharashtra) |
+| **Faculty** | Ms. Anita Sharma | `anita.sharma@Pragyan.gov.in` | `demo123` | Science Faculty · SCH-GJ-204 (Gujarat) |
+| **Faculty** | Ravi Verma | `ravi.verma@Pragyan.gov.in` | `demo123` | Mathematics Faculty · SCH-MH-112 (Maharashtra) |
 | **Student** | Diya Mehta | `diya@student.in` | `demo123` | Class 8 · KV Ahmedabad · **Rank #1** |
 | **Student** | Aarav Patel | `aarav@student.in` | `demo123` | Class 8 · Shiksha Kendra, Rajkot |
 | **Student** | Arjun Thakur | `arjun@student.in` | `demo123` | Class 7 · Shiksha Kendra, Patna |
@@ -181,3 +181,4 @@ SIH-PRAGYAN-2026/
 
 ## 🇮🇳 8. Team PRAGYAN (SIH 2026)
 Developed for the **Smart India Hackathon 2026** to empower government and rural school students across India with accessible, high-quality NCERT foundational education.
+

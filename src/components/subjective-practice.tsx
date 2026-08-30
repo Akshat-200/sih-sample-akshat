@@ -68,7 +68,7 @@ export function SubjectivePractice({
 
   const downloadScheme = () => {
     const lines: string[] = [
-      `VIDYASETU — MODEL MARKING SCHEME`,
+      `PRAGYAN (प्रज्ञान) — MODEL MARKING SCHEME`,
       `Chapter: ${chapterTitle}`,
       `Total: ${questions.length} questions · ${totalMarks} marks`,
       ``,

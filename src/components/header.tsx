@@ -29,7 +29,7 @@ export async function SiteHeader() {
     <header className="sticky top-0 z-40 border-b-2 border-saffron-500/70 bg-white/95 backdrop-blur">
       <div className="tricolor-strip h-1.5 w-full" aria-hidden="true" />
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-2.5">
-        <Link href="/home" className="shrink-0" aria-label="VidyaSetu home">
+        <Link href="/home" className="shrink-0" aria-label="Pragyan home">
           <Wordmark />
         </Link>
 
