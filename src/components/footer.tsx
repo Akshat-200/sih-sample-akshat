@@ -1,4 +1,4 @@
-import { Wordmark } from "./header";
+import { Wordmark } from "./ui";
 
 export function SiteFooter() {
   return (
